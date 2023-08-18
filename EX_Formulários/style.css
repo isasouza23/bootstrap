@@ -1,0 +1,106 @@
+CSS
+/* Definição de estilo do corpo da página */
+body {
+    background-color: #f8f8f8;
+}
+/*estilos do formulario*/
+#form-container {
+    background-color: #FFF; /*cor do fundo*/
+    border-radius: 20px; /*arredonda*/
+    box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);/*sombra*/
+    margin: 25px auto;
+    padding: 25px;
+}
+/* estilos especificos p larguras de telas maiores ou iguais a 768px*/
+@media (min-width: 768px) {
+    #form-container {
+        margin: 50px auto;
+        padding: 50px;
+    }
+}
+
+/*estilos´p os cabeçalhos do formulario*/
+#form-container h2 {
+    font-weight: 900; /*peso da fonte*/
+    margin-bottom: 30px;
+}
+
+/*estilos p link dentro do formulario*/
+#form-container a {
+    color: #222; /*cor do texto do link*/
+    transition: .5s; /*transição suave*/
+}
+
+/*estilos p link dentro do formulario quando hover*/
+#form-container a:hover {
+    color: #009033;/*cor do texto qnd passar o mouse*/
+}
+
+/*estilos p o formulario em si*/
+#form-container form {
+    padding-bottom: 50px; /*preenchimento inferior*/
+}
+
+/*estilos p os campos de entrada de formulario*/
+#form-container .form-control {
+    border: none;
+    border-bottom: 1px solid #CCC; /*borda inferior*/
+    border-radius: 0;
+}
+
+/*estilos p o campo de entrada qnd em foco*/
+#form-container .form-control:focus {
+    box-shadow: none;
+}
+
+/*estilos p os rotulos flutuantes*/
+#form-container .form-floating label {
+    color: #CCC; /*cor do rotulo */
+}
+
+/*estilos p os rotulos flutuantes qnd o campo está em foco */
+#form-container .form-floating > .form-control:focus~label {
+    color: #222; /*cor do rotulo qnd em foco*/
+}
+
+/*estilos p os checkboxes marcados e botão de envio do formulário*/
+#form-container .form-check-input:checked,
+#form-container input[type="submit"] {
+    background-color: #00BF57;
+    border-color: #00BF57;
+}
+
+/*estilos p botoes primarios*/
+.btn.btn-primary {
+    width: 100%;/*largura total*/
+}
+
+/*estilos p botão personalizado com classe botao*/
+.botao {
+    background-color: #00BF57 !important; /*cor do fundo do botao*/
+    border-color: #00BF57 !important;/*cor da borda do botao*/
+}
+.botao:hover {
+    background-color: #009033 !important; /*cor de fundo do botao ao passar o mouse*/
+    border-color:#009033 !important;/*cor da borda do botãp ao passar o mouse*/
+}
+
+/*estilos p larguras de tela maiores ou iguais a 768px*/
+@media(min-width:768px) {
+    /*estilos p botôes primários em telas grandes*/
+    .btn.btn-primary {
+        width: auto;
+    }
+}
+
+/*estilos p alinhar conteudo verticalmente*/
+.row.align-items-center {
+    align-content: center; /*alinhamento vertical do conteudo*/
+    height: 100%;
+}
+
+/*estilos p o container de links*/
+#link-container {
+    text-align: center;
+    padding-top: 50px;
+}
